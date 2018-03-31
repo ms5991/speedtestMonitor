@@ -2,7 +2,7 @@
 
 ## Setup
 
-First, set up a Gmail account to use.  Put the information for that account in the file called `email_config.json`. This file should be in the same directory as `speedtest_logger.py`
+First, set up a Gmail account from which the data will be sent.  This doesn't need to be the account that you receive data from.  Put the account for the sending account in the file called `email_config.json`. This file should be in the same directory as `speedtest_logger.py`
 
 Follow the instructions [here](https://github.com/sivel/speedtest-cli) to download `speedtest-cli`, the command line interface to speedtest.net
 
@@ -28,7 +28,7 @@ Then, add the command you want to run to the file.  Daily looks something like t
 
 	0 12 * * * python /home/pi/speedtest_logger/speedtest_logger.py --log /home/pi/log_speedtest_cron_daily.csv --email emailReceivingData@gmail.com >> /home/pi/cron_speedtest_daily.txt 2>&1
 
-I push the output into a log file as well, as you can see with the `>>`.  This command will run every day, append the data to `/home/pi/log_speedtest_cron_daily.csv`, and email the results each time to emailReceivingData@gmail.com.  This email address is likely, though not necessarily, different than the one sending the data.
+I push the output into a log file as well, as you can see with the `>>`.  This command will run every day, append the data to `/home/pi/log_speedtest_cron_daily.csv`, and email the results each time to `emailReceivingData@gmail.com`.  This email address is likely, though not necessarily, different than the one sending the data.
 
 To run hourly:
 
