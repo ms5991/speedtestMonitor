@@ -14,11 +14,12 @@ The most basic command is basically a wrapper around the speedtest-cli:
 
 There are some options you can use as well, including:
 
-	`-t` or `--testing`: Skip communicating with speedtest and print dummy data.  Can be helpful to set up logging or email
-	`-v` or `--verbose`: Prints more detailed information
-	`l`                : Prints logs to a default file location, which is `/home/pi/log_speedtest.csv`
-	`--log`	           : Requires that you provide a log file path to which logs will be printed
-	`--email`          : Sends an email to the provided email address with the results of the test
+`-t` or `--testing`: Skip communicating with speedtest and print dummy data.  Can be helpful to set up logging or email
+`-v` or `--verbose`: Prints more detailed information
+`l`                : Prints logs to a default file location, which is `/home/pi/log_speedtest.csv`
+`--log`	           : Requires that you provide a log file path to which logs will be printed
+`--email`          : Sends an email to the provided email address with the results of the test
+
 
 
 
